@@ -5,15 +5,15 @@ import time
 import json
 import urllib
 
-FS_CLIENT_ID = 'SKHUJ4YQ1OAUOU5BOZBUKWX3F2UDLS2BBGDTIWTRZTME45JK'
-FS_CLIENT_SECRET = 'CZA4EVAILE2ZDSYG0ZNBK4RDGKI4DL33O1Q2XZBQHWYVTVXV'
+FS_CLIENT_ID = 'SECRET'
+FS_CLIENT_SECRET = 'SECRET'
 FS_SEARCH_URL = 'https://api.foursquare.com/v2/venues/explore'
-GMAPS_KEY = 'AIzaSyDGacJJrvstnrNLVlRLpK28gt4V1OgKU8o'
+GMAPS_KEY = 'SECRET'
 GMAPS_SEARCH_URL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
 GAS_FEED_URL = 'http://devapi.mygasfeed.com/stations/radius'
-GAS_FEED_KEY = 'rfej9napna'
+GAS_FEED_KEY = 'SECRET'
 DISTANCE_URL = 'https://maps.googleapis.com/maps/api/distancematrix/json'
-YELP_TOKEN = '-MVhypzqyr3jyP0Q4vVrJHaqy09ycz8ViJpAISlRUcKuxu5T8rVY8PwsGWGZNiVE-eyK-Sr6tUDuaNbmsNWRl5_QE4bNRJufzdAYjYLIFSuLUqeAwOqT3JaoFEoHWXYx'
+YELP_TOKEN = 'SECRET'
 YELP_SEARCH_URL = 'https://api.yelp.com/v3/businesses/search'
 
 gmaps_client = googlemaps.Client(key=GMAPS_KEY)

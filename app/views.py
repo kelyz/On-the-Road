@@ -8,7 +8,7 @@ import json
 import urllib.parse
 import googlemaps
 
-GMAPS_KEY = 'AIzaSyDGacJJrvstnrNLVlRLpK28gt4V1OgKU8o'
+GMAPS_KEY = 'SECRET'
 GMAPS_SEARCH_URL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
 gmaps_client = googlemaps.Client(key=GMAPS_KEY)
 
