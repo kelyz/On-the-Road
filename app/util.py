@@ -18,10 +18,6 @@ GAS_FEED_URL = 'http://devapi.mygasfeed.com/stations/radius'
 DISTANCE_URL = 'https://maps.googleapis.com/maps/api/distancematrix/json'
 YELP_SEARCH_URL = 'https://api.yelp.com/v3/businesses/search'
 
-#40.7127837,-74.0059413
-#http://devapi.mygasfeed.com/stations/radius/40.7127837/-74.0059413/10/reg/distance/rfej9napna.json?
-#https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.7127837,-74.0059413&radius=500&type=restaurant&keyword=bar&key=AIzaSyDGacJJrvstnrNLVlRLpK28gt4V1OgKU8o
-
 gmaps_client = googlemaps.Client(key=GMAPS_KEY)
 
 date = time.strftime("%Y%m%d")
