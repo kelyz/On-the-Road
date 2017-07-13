@@ -62,9 +62,9 @@ def yelp_search(lat, lng):
 	}
 
 	session = rauth.OAuth1Session(consumer_key=CONSUMER_KEY,
-									consumer_secret=CONSUMER_SECRET,
-									access_token=TOKEN,
-									access_token_secret=TOKEN_SECRET)
+					consumer_secret=CONSUMER_SECRET,
+					access_token=TOKEN,
+					access_token_secret=TOKEN_SECRET)
 	request = session.get(YELP_SEARCH_URL, params=data)
 	# json_response = request.json()
 	# session.close()
