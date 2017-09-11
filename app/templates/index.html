@@ -9,15 +9,16 @@
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhXQdXEFckTLpvLAic1QTGD3NO2PLuQ8k&libraries=places"></script>
 	</head>
 	<body>
-		<h1><i>On The Road</i></h1>
-		<a href="http://127.0.0.1:5000/signup">Sign Up</a>
-		<a href="#">Login</a>
+		<h1>On The Road</h1>
+		<h5> Find resturants and cool places to visit <br>
+		Save your favorite places to revisit someday<br><h5>
+		<i class="fa fa-car fa-lg" aria-hidden="true"></i>
 		<form action="/search" method="GET">
 			<div id="container" class="form-group">
-				<h4>From: <input type="text" id="from" name="origin" placeholder="New York City" required></h4>
-				<h4>To: <input type="text" id = "to" name="destination" placeholder="San Francisco" required></h4>
-				<h4>I Want to See: <input type="text" id = "query" name="query" placeholder="People And I Want To See Life!"></h4>
-				<input class="btn btn-primary" type="submit" value="submit">
+				<h4>START: <br><input type="text" id="from" name="origin" placeholder="New York City" required></h4>
+				<h4>DESTINATION: <br><input type="text" id = "to" name="destination" placeholder="San Francisco" required></h4>
+				<h4>SIGHTS TO SEE: <br><input type="text" id = "query" name="query" placeholder="Pancakes"></h4><p>
+				<button id="test" class="button" type="submit">submit</button>
 			</div>
 		</form>
 		<script type="text/javascript">
@@ -26,5 +27,6 @@
 			var to = document.getElementById('to');
 			var autoTo = new google.maps.places.Autocomplete(to);
 		</script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b46f928d15947d"></script> 
 	</body>
 </html>

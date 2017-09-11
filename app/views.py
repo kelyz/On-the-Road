@@ -1,4 +1,4 @@
-from flask import request, render_template, jsonify
+from flask import session, request, render_template, jsonify
 from app import app
 from app import util
 import requests
@@ -20,15 +20,21 @@ def index():
 @app.route('/search', methods=['GET','POST'])
 def search():
 	if request.method == 'POST':
-		places = []
-		gas_stations = []
+
 		data = request.json
 		step_unit = int(len(data) // 10)
 		step_unit = step_unit if not step_unit % 2 else step_unit - 1
 		data_dict = {data[i]: data[i+1] for i in range(0, len(data), step_unit)}
-		
-		for lat,lng in data_dict.items():
-			places.append(util.fs_search(lat, lng))
+
+		query = session['query']
+
+		fs_places = [util.fs_search(lat, lng) for lat,lng in data_dict.items() 
+					if util.fs_search(lat, lng) != None]
+
+		yelp_places = [util.yelp_search(lat, lng, query) for lat,lng in data_dict.items() 
+					  if util.yelp_search(lat, lng, query) != None]
+
+		places = list(set(fs_places + yelp_places))
 
 		return jsonify(places)
 
@@ -42,6 +48,9 @@ def search():
 		destination = gmaps_client.geocode(end)
 		dest_lat = destination[0]['geometry']['location']['lat']
 		dest_lng = destination[0]['geometry']['location']['lng']
+
+		query = request.args.get('query')
+		session['query'] = query
 		
 		return render_template(
 			'search.html', start=start, end=end, originlat=origin_lat, originlng=origin_lng, 
