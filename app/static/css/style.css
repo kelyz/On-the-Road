@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand');
 
 body {
-	background-image: url("../images/citybackground.jpg");
-	background-repeat: no-repeat;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	text-align: center;
+    background-image: url("../images/citybackground.jpg");
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: center;
 }
 
 ul {
-	font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     list-style-type: none;
     margin: 0;
     width: 80px;
@@ -18,7 +18,7 @@ ul {
     border-style: solid;
     border-color: #ffffff;
     border-radius: 40px;
-	opacity: 0.8;
+    opacity: 0.8;
 }
 
 li {
@@ -26,42 +26,42 @@ li {
 }
 
 h1 {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 80px;
-	color: white;
-	padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 80px;
+    color: white;
+    padding: 0px;
     margin: 0px;
     margin-top: 40px;
 }
 
 h5 {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 17px;
-	color: white;
-	padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    color: white;
+    padding: 10px;
 }
 
 #container, h4 {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 30px;
-	color: white;
-	display: inline-block;
-	margin-right: 60px;
-	margin-left: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: white;
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 #from, #to, #query {
-	width: 215px;
-	height: 30px;
-	font-size: 15px;
-	border: 3px;
+    width: 215px;
+    height: 30px;
+    font-size: 15px;
+    border: 3px;
     border-radius: 3px;
-	padding-left: 5px;
+    padding-left: 5px;
 
 }
 
 .button {
-	background-color: #09C7C4;
+    background-color: #09C7C4;
     border: none;
     border-radius: 3px;
     color: white;
