@@ -11,7 +11,6 @@ FS_CLIENT_ID = os.environ['FS_CLIENT_ID']
 FS_CLIENT_SECRET = os.environ['FS_CLIENT_SECRET']
 GMAPS_KEY = os.environ['GMAPS_KEY']
 YELP_TOKEN = os.environ['YELP_TOKEN']
-GAS_FEED_KEY = os.environ['GAS_FEED_KEY']
 
 FS_SEARCH_URL = 'https://api.foursquare.com/v2/venues/explore'
 GMAPS_SEARCH_URL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
