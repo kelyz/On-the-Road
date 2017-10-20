@@ -63,6 +63,7 @@
 	       			avoidTolls: false
 	        	};
 
+	        	//Find all latitude and longitude points on a route
 	        	directionsService.route(request, function(response, status) {
 	        		if (status == google.maps.DirectionsStatus.OK) {
 	        			directionsDisplay.setDirections(response);
@@ -107,6 +108,7 @@
 	        	});
 	        }
 
+	        //Boilerplate code to create markers on Google Maps
 	      	function displayVenue(venuelat, venuelng, venueName, directionsDisplay, directionsService,
 	      		markerArray, stepDisplay, map) {
 	        	directionsService.route({
@@ -133,6 +135,7 @@
 	        });
 	    }
 
+	    //Attach the names of venues to the markers so they appear on click
 	    function attachName(stepDisplay, marker, text, map) {
 	    	google.maps.event.addListener(marker, 'click', function() {
 	          stepDisplay.setContent(text);
